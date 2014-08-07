@@ -7,14 +7,14 @@ import urllib2
 class BurpExtender(IBurpExtender):
     def registerExtenderCallbacks(self, callbacks):
         self.mCallBacks = callbacks
-        self.mCallBacks.registerMenuItem("SSL Scan", ArgsDiffMenuItem())
+        self.mCallBacks.registerMenuItem("SSL Scan", hostnamefunc())
 
-class ArgsDiffMenuItem(IMenuItemHandler):
+class hostnamefunc(IMenuItemHandler):
     def menuItemClicked(self, menuItemCaption, messageInfo):
         print "--- Hostname Extract ---"
         
         if messageInfo:
-            # We can do a diff
+            
             request1=HttpRequest(messageInfo[0].getRequest())
             req=request1.request
             host=req[1]    
