@@ -7,7 +7,7 @@ import urllib2
 class BurpExtender(IBurpExtender):
     def registerExtenderCallbacks(self, callbacks):
         self.mCallBacks = callbacks
-        self.mCallBacks.registerMenuItem("SSL Scan", hostnamefunc())
+        self.mCallBacks.registerMenuItem("Sample Extention", hostnamefunc())
 
 class hostnamefunc(IMenuItemHandler):
     def menuItemClicked(self, menuItemCaption, messageInfo):
