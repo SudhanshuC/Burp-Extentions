@@ -1,0 +1,17 @@
+Regular Expression,Potential Attacks,Severity,Reference Link
+command,Command Injection,Critical,http://resources.infosecinstitute.com/command-execution/
+csrf,Cross Site Request Forgery,Moderate,http://shield4you.blogspot.com/2015/03/cross-site-request-forger-anti-csrf.html
+bigip,Infomation Leakage,Low,https://blog.secureideas.com/2013/02/decoding-f5-cookie.html
+page,Local File Inclusion,,
+path,Local File Inclusion,Severe,https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion
+file,Local File Inclusion / Unrestricted File Upload,Severe,https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion / https://www.owasp.org/index.php/Unrestricted_File_Upload
+url,Open Redirect,Moderate,https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
+price,Price Tampering,Severe,http://yassineaboukir.com/blog/price-manipulation-vulnerability-in-e-commerce-platforms/
+upload,Unrestricted File Upload,Critical,https://www.owasp.org/index.php/Unrestricted_File_Upload
+user,Username Enumeration,Moderate,https://www.owasp.org/index.php/Testing_for_User_Enumeration_and_Guessable_User_Account_(OWASP-AT-002)
+admin,Web Parameter Tampering,Severe,http://www.cgisecurity.com/owasp/html/ch11s04.html
+credit,Web Parameter Tampering,Severe,https://www.owasp.org/index.php/Web_Parameter_Tampering
+debit,Web Parameter Tampering,Severe,https://www.owasp.org/index.php/Web_Parameter_Tampering
+amount,Web Parameter Tampering,Severe,https://www.owasp.org/index.php/Web_Parameter_Tampering
+samlresponse,XML eXternal Entity (XXE),Severe,https://blog.compass-security.com/tag/saml-raider/; http://web-in-security.blogspot.com/2014/11/detecting-and-exploiting-xxe-in-saml.html
+xml,XML eXternal Entity (XXE),Severe,https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing
